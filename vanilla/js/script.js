@@ -29,7 +29,7 @@ var bikes = [
 
 
 var lightBike = bikes[0];
-for ( va i = 1; i < bikes.length; i++) {
+for ( var i = 1; i < bikes.length; i++) {
     if ( bikes[i].kg < lightBike.kg ) {
       lightBike = bikes[i];
     }
