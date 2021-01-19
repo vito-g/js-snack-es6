@@ -34,4 +34,4 @@ for ( var i = 1; i < bikes.length; i++) {
       lightBike = bikes[i];
     }
 }
-    console.log(lightBike);
+    console.log(lightBike.nome);
