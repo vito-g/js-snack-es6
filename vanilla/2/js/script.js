@@ -23,3 +23,14 @@ for (var i = 0; i < squadre.length; i++) {
 }
 
 console.log(squadre);
+
+// Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+var squadreReview = [];
+
+for (var i = 0; i < squadre.length; i++) {
+  squadreReview.push({nome : squadre[i].nome, falliSubiti : squadre[i].falliSubiti });
+}
+
+
+console.log(squadreReview);
