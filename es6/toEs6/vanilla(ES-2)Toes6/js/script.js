@@ -29,7 +29,10 @@ console.log('Array 1 ', squadre);
 const squadreReview = [];
 
 for (let i = 0; i < squadre.length; i++) {
-  squadreReview.push({nome : squadre[i].nome, falliSubiti : squadre[i].falliSubiti });
+  // squadreReview.push({nome : squadre[i].nome, falliSubiti : squadre[i].falliSubiti });
+  //La Destrutturazione in Es6 diventa:
+  const {nome, falliSubiti} = squadre[i];
+  squadreReview.push({nome, falliSubiti});
 }
 
 
