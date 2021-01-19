@@ -35,3 +35,13 @@ for ( let i = 1; i < bikes.length; i++) {
   }
 }
 console.log(lightBike.nome);
+
+let {nome, kg} = lightBike;
+
+
+let elOutput = document.getElementById('output');
+elOutput.innerHTML = `
+<ul>
+  <li>Nome: ${nome}</li>
+  <li>Kg: ${kg}</li>
+</ul>`;
