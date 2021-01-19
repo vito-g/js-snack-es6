@@ -6,9 +6,9 @@
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 var squadre = [
-  {'nome' : 'Juve' , 'score' = 0, 'falliSubiti' : 0 },
-  {'nome' : 'Napoli' , 'score' = 0, 'falliSubiti' : 0 },
-  {'nome' : 'Inter' , 'score' = 0, 'falliSubiti' : 0 }
+  {'nome' : 'Juve' , 'score' : 0, 'falliSubiti' : 0 },
+  {'nome' : 'Napoli' , 'score' : 0, 'falliSubiti' : 0 },
+  {'nome' : 'Inter' , 'score' : 0, 'falliSubiti' : 0 }
 ];
 
 function random(a, b) {
@@ -16,8 +16,10 @@ function random(a, b) {
   return randomNumber;
 }
 
-console.log(random(0, 100));
-squadre[].score = random(0,100);
-squadre[].falliSubiti = random(0,20);
+for (var i = 0; i < squadre.length; i++) {
+  squadre[i].score = random(0,100);
+  squadre[i].falliSubiti = random(0,20);
+
+}
 
 console.log(squadre);
