@@ -27,11 +27,11 @@ const bikes = [
     {'nome': 'Giant', 'kg': 0.5}
 ];
 
+let lightBike = bikes[0];
 
-for ( var i = 1; i < bikes.length; i++) {
-  let lightBike = bikes[0];
+for ( let i = 1; i < bikes.length; i++) {
   if ( bikes[i].kg < lightBike.kg ) {
     lightBike = bikes[i];
-    console.log(lightBike.nome);
   }
 }
+console.log(lightBike.nome);
