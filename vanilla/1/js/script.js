@@ -4,6 +4,7 @@
 // Stampare a schermo la bici con peso minore
 
 
+
 // var bikes = [
 //     {'nome': 'Atala', 'kg': 1},
 //     {'nome': 'Bianchi', 'kg': 1.5},
@@ -35,3 +36,6 @@ for ( var i = 1; i < bikes.length; i++) {
   }
 }
 console.log(lightBike.nome);
+
+var elOutput = document.getElementById('output');
+elOutput.innerHTML = '<ul><li>Ecco la Bici più leggera: ' + lightBike.nome.toUpperCase() + '</li><br><li>Ed ecco il suo peso: ' + lightBike.kg + ' kg</ul>';
