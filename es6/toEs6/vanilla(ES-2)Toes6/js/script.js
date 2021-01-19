@@ -31,7 +31,10 @@ const squadreReview = [];
 for (let i = 0; i < squadre.length; i++) {
   // squadreReview.push({nome : squadre[i].nome, falliSubiti : squadre[i].falliSubiti });
   //La Destrutturazione in Es6 diventa:
+  //Keyword per Dichiarare le var//Tutte le Key che vogliamo estrapolare//Oggetto da cui estrapolare le Key:
   const {nome, falliSubiti} = squadre[i];
+  // squadreReview.push({'nome' : nome, 'falliSubiti' : falliSubiti}); //CHe posso anche scrivere come segue:
+  //Questo perchè la key si chiama allo stesso modo del nome della proprietà che voglio richiamare
   squadreReview.push({nome, falliSubiti});
 }
 
