@@ -33,4 +33,5 @@ for ( var i = 1; i < bikes.length; i++) {
     if ( bikes[i].kg < lightBike.kg ) {
       lightBike = bikes[i];
     }
+}
     console.log(lightBike);
