@@ -30,8 +30,8 @@ var bikes = [
 
 var lightBike = bikes[0];
 for ( var i = 1; i < bikes.length; i++) {
-    if ( bikes[i].kg < lightBike.kg ) {
-      lightBike = bikes[i];
-    }
+  if ( bikes[i].kg < lightBike.kg ) {
+    lightBike = bikes[i];
+  }
 }
-    console.log(lightBike.nome);
+console.log(lightBike.nome);
