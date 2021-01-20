@@ -29,4 +29,7 @@ function fx(array,numMin,numMax) {
 return arrayNew;
 }
 
-console.log(fx(list, min, max)); 
+console.log(`
+Che nel Range Index Item da ${min} a ${max}, diventa:
+
+Array Filtrato: [` + fx(list, min, max) + `]`);
