@@ -10,6 +10,7 @@ const max = parseInt(prompt('Inserisci un numero max'));
 
 const list = [23,54,89,4,2,90];
 console.log(`Array Sorgente: [${list}]`);
+
 function fx(array,numMin,numMax) {
   const arrayNew = [];
   // for ( let i = 0; i < array.length; i++) {
@@ -28,7 +29,6 @@ function fx(array,numMin,numMax) {
 
 return arrayNew;
 }
-
 // console.log(`
 // Che nel Range Index Item da ${min} a ${max}, diventa:
 //
@@ -41,3 +41,11 @@ Che nel Range Index Item da ${min} a ${max}, diventa:
 Array Filtrato: [${fx(list, min, max)}]`);
 
 //N.B.: Il BACKTICK (ALT + 96), o Accento Grave, restituisce spazi e "a capo" e, correttamente utilizzato evita l'uso del concatenatore di stringhe ('+').
+
+//N.B: INVECE così:
+console.log(`
+Nel modo che segue posso, invece, espandere in console ciò che stampo:
+
+`);
+console.log(list);// In questo modo posso espandere in console ciò che stampo
+console.log(fx(list, min, max));//In questo modo posso espandere in console ciò che stampo
