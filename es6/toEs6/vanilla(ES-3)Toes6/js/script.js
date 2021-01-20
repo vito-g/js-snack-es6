@@ -29,7 +29,15 @@ function fx(array,numMin,numMax) {
 return arrayNew;
 }
 
+// console.log(`
+// Che nel Range Index Item da ${min} a ${max}, diventa:
+//
+// Array Filtrato: [` + fx(list, min, max) + `]`);
+
+//N.B.: MEGLIO ancora COME SEGUE:
 console.log(`
 Che nel Range Index Item da ${min} a ${max}, diventa:
 
-Array Filtrato: [` + fx(list, min, max) + `]`);
+Array Filtrato: [${fx(list, min, max)}]`);
+
+//N.B.: Il BACKTICK (ALT + 96), o Accento Grave, restituisce spazi e "a capo" e, correttamente utilizzato evita l'uso del concatenatore di stringhe ('+').
