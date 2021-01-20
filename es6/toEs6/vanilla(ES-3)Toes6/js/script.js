@@ -9,13 +9,14 @@ const max = parseInt(prompt('Inserisci un numero max'));
 
 
 const list = [23,54,89,4,2,90];
+console.log(`Array Sorgente: [${list}]`);
 function fx(array,numMin,numMax) {
   const arrayNew = [];
   // for ( let i = 0; i < array.length; i++) {
   //   if (( i >= min) && (i <= max)) {
   //   arrayNew.push(array[i]);
-  // }
-  list.forEach((elemento,index) => {
+  // } // N.B.: In Es6 posso tradurre il Ciclo FOR con il + VERSATILE FOR/EACH:
+  array.forEach((elemento,index) => {
     // console.log(elemento);
     // console.log(index);
     if (( index >= numMin) && (index <= numMax)) {
@@ -28,4 +29,4 @@ function fx(array,numMin,numMax) {
 return arrayNew;
 }
 
-console.log(fx(list, min, max));
+console.log(fx(list, min, max)); 
