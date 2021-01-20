@@ -21,6 +21,7 @@ var max = parseInt(prompt('Inserisci un numero max'));
 
 
 var list = [23,54,89,4,2,90];
+console.log('Array Sorgente: ', list)
 function fx(array,numMin,numMax) {
   var arrayNew = [];
   for ( var i = 0; i < array.length; i++) {
@@ -30,5 +31,5 @@ function fx(array,numMin,numMax) {
 }
 return arrayNew;
 }
-
-console.log(fx(list, min, max));
+console.log('Range Index Item Scelto: ', min + '-' + max);
+console.log('Array Filtrato: ', fx(list, min, max));
