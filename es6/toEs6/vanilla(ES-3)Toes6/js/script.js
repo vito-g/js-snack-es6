@@ -44,8 +44,8 @@ Array Filtrato: [${fx(list, min, max)}]`);
 
 //N.B: INVECE così:
 console.log(`
-Nel modo che segue posso, invece, espandere in console ciò che stampo:
+Nel modo che segue posso, invece, espandere in Console ciò che stampo:
 
 `);
-console.log(list);// In questo modo posso espandere in console ciò che stampo
-console.log(fx(list, min, max));//In questo modo posso espandere in console ciò che stampo
+console.log('Array Sorgente: ', list);// In questo modo posso espandere in console ciò che stampo
+console.log('Array Filtrato', fx(list, min, max));//In questo modo posso espandere in console ciò che stampo
