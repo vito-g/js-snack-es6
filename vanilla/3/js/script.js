@@ -14,16 +14,18 @@
 
 // ---------------------------------------------------
 // COL CICLO for
-var min = 1;
-var max = 3;
+// var min = 1;
+// var max = 3;
+var min = parseInt(prompt('Inserisci un numero minimo'));
+var max = parseInt(prompt('Inserisci un numero max'));
 
 
 var list = [23,54,89,4,2,90];
 function fx(array,numMin,numMax) {
   var arrayNew = [];
-  for ( var i = 0; i < list.length; i++) {
+  for ( var i = 0; i < array.length; i++) {
     if (( i >= min) && (i <= max)) {
-    arrayNew.push(list[i]);
+    arrayNew.push(array[i]);
   }
 }
 return arrayNew;
